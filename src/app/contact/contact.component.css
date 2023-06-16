@@ -1,0 +1,104 @@
+.con-con {
+  
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("https://images.pexels.com/photos/7014337/pexels-photo-7014337.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    padding: 20px;
+    min-height: 100vh;
+    color: #fff;
+  }
+  .na{
+    max-width: 400px; 
+    margin: 0 auto;
+    float: left;
+    padding-left: 100px;
+    padding-top: 60px;
+    /* display: flex;
+    justify-content: flex-end;  */
+  }
+  
+  .container {
+      max-width: 400px;
+      margin: 0 auto;
+      float: right;
+      padding-right: 100px;
+      display: flex;
+      justify-content: flex-end;
+      
+    }
+  
+  .con {
+    max-width: 200px;
+    margin: 0 auto;
+    padding-top: 50px;
+   
+  }
+  /* .container {
+      display: flex;
+      justify-content: flex-end;
+    } */
+  
+      
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    label {
+      display: block;
+      font-weight: bold;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    
+    button[type="submit"] {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    button[type="submit"]:hover {
+      background-color: #43a048;
+    }
+    
+    .error {
+      color: red;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+    .navbar {
+      background-color:transparent;
+      padding: 10px;
+    }
+    
+    .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    
+    .navbar li {
+      float: right;
+    }
+    .navbar li a {
+      display: block;
+      color:white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      
+    }
+    
+    .navbar li a:hover {
+      background-color: #635d5d;
+    }
