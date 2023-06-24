@@ -149,4 +149,6 @@ body{
     background: rgba(39, 39, 39, 0.4);
     border-radius: 8px;
   }
-  
+  .input-field:hover, .input-field:focus{
+    background: rgba(255, 255, 255, 0.25);
+}

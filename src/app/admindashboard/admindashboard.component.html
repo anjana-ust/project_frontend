@@ -1,0 +1,56 @@
+<div class="navbar">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </div>
+  
+  <div class="sidebar">
+    <input type="text" placeholder="Search..." >
+    <ul>
+      <li><a (click)="showAssignForm()">Assign Task</a></li>
+      <li><a (click)="showTableView()">View Task</a></li>
+    </ul>
+  </div>
+  
+  <div class="content">
+    <div *ngIf="showAssignFormFlag">
+      <!-- <label for="uid">UID:</label>
+      <input type="text" id="uid" [(ngModel)]="tasks.taskName"> -->
+      <br>
+      &nbsp;
+      <label for="taskName">Task Name:</label>
+      <input type="text" id="taskName" [(ngModel)]="tasks.taskName">
+      <br>
+      <label for="deadline">Deadline:</label>
+      <input type="text" id="deadline" [(ngModel)]="tasks.deadline">
+      <br>
+      <button (click)="saveTask()">Save</button>
+    </div>
+  
+    <table *ngIf="showTableViewFlag">
+      <tr>
+        <th>Number</th>
+        <th>Task Name</th>
+        <th>Deadline</th>
+        <th>Status</th>
+        <th>Action</th>
+        
+      </tr>
+      <tr *ngFor="let task1 of task ">
+        <td>{{ task1.id }}</td>
+        <td>{{ task1.taskName }}</td>
+        <td>{{ task1.deadline }}</td>
+        <td>pending</td>
+        <td>
+        <button >Update</button>
+        &nbsp;
+        <button (click)="task1.id !== undefined ? deleteEventById(task1.id) : null">Delete</button>
+        </td>
+        
+      </tr>
+    </table> 
+  </div>
+  
